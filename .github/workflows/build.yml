@@ -3,6 +3,8 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@v1
     - name: Run Setup script
       run: ./scripts/setup.sh
     - name: iOS Build Action
